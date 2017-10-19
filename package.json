@@ -1,0 +1,33 @@
+{
+  "name": "start-node",
+  "version": "1.0.0",
+  "description": "startup node project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laohanme/start-node.git"
+  },
+  "keywords": [
+    "start",
+    "nodejs",
+    "expressjs",
+    "javascript"
+  ],
+  "author": "laohan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laohanme/start-node/issues"
+  },
+  "homepage": "https://github.com/laohanme/start-node#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
