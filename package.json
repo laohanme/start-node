@@ -4,7 +4,8 @@
   "description": "startup node project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e \".html|.css|.js\" --delay 2500ms index.js "
   },
   "repository": {
     "type": "git",
