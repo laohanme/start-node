@@ -28,7 +28,8 @@
     "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
     "pug": "^2.0.0-rc.4",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "serve-favicon": "^2.4.5"
   },
   "devDependencies": {
     "eslint": "^4.11.0",
