@@ -1,26 +1,24 @@
-const express = require('express');
-var app = express();
+const express = require('express'),
+    favicon = require('serve-favicon'),
+    urlMain = require('./routes/main'),
+    path = require('path');
 
-app.set('view engine', 'pug')
+app = express();
+app.set('view engine', 'pug');
+
 // templates
-app.set('views', './templates')
+app.set('views', './templates');
+
 // static
-app.use('/static', express.static('static')); 
+app.use('/static', express.static('static'));
 
-// Start From Here
-// ****************** Work Area ***************************
-app.get("/",function(req,res){
-   res.send('Hello World')
-});
+// use routes from routes/main.js
+app.use(urlMain);
 
-app.get("/nodejs",function(req,res){
-   res.render('index', { title: 'Welcome to Nodejs', message: 'Hello there!'})
-});
+app.use(favicon(path.join(__dirname, 'static', 'favicon', 'favicon.png')));
 
-
-// ****************** End of Work Area ***************************
-
-
-app.listen(3000, function () {
-	console.log('listening on port 3000!');
+const portNumber = 3000;
+app.listen(portNumber, function() {
+  console.log('listening on port ' + portNumber + '!');
+  console.log('http://localhost:' + portNumber);
 });
