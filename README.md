@@ -10,10 +10,17 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-Please install nodejs before continue this project
-[Node.js](https://nodejs.org/en/)
+Please install [Node.js](https://nodejs.org/en/) before continue this project
+
+Clone
 ```
 git clone https://github.com/laohanme/start-node
+```
+Then
+```
+cd start-node
+
+npm install
 ```
 ## License
 
