@@ -6,21 +6,22 @@ const express = require('express'),
     cookieParser = require('cookie-parser');
 
 app = express();
+// View filetype .pug
 app.set('view engine', 'pug');
 
-// templates
+// Templates
 app.set('views', './templates');
 
-// static
+// Static
 app.use('/static', express.static('static'));
 
 // Middleware to parse POST request & cookies
 // Must include if you want to parse POST request
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// use routes from routes/main.js
+// Use routes from routes/main.js
 app.use(urlMain);
 
 app.use(favicon(path.join(__dirname, 'static', 'favicon', 'favicon.png')));
