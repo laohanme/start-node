@@ -5,15 +5,15 @@ Trying to start nodejs and build your website? <br>
 
 Dependencies | Version
 --- | --- |
-body-parser | ^1.18.2
-cookie-parser | ^1.4.3
-express | ^4.16.2
-pug | ^2.0.0-rc.4
-request | ^2.83.0
-serve-favicon | ^2.4.5
-eslint | ^4.11.0
-eslint-config-google | ^0.9.1
-nodemon | ^1.12.1
+[body-parser](https://github.com/expressjs/body-parser) | ^1.18.2
+[cookie-parser](https://github.com/expressjs/cookie-parser) | ^1.4.3
+[express](https://github.com/expressjs/express) | ^4.16.2
+[pug](https://pugjs.org/api/getting-started.html) | ^2.0.0-rc.4
+[request](https://github.com/request/request) | ^2.83.0
+[serve-favicon](https://github.com/expressjs/serve-favicon) | ^2.4.5
+[eslint](https://github.com/eslint/eslint) | ^4.11.0
+[eslint-config-google](https://github.com/google/eslint-config-google) | ^0.9.1
+[nodemon](https://github.com/remy/nodemon) | ^1.12.1
 
 ## Getting Started
 
