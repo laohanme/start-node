@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
 app = express();
+
 // View filetype .pug
 app.set('view engine', 'pug');
 
@@ -13,6 +14,18 @@ app.set('views', './views');
 
 // Static
 app.use('/static', express.static('static'));
+
+app.get('/', function(req, res) {
+    res.render('index', {title: 'Welcome to Nodejs', message: 'Hello there!'});
+});
+
+app.get('/api', function(req, res) {
+    res.json(req.query);
+});
+
+app.post('/api', function(req, res) {
+    res.json(req.body);
+});
 
 // Middleware to parse POST request & cookies
 // Must include if you want to parse POST request
