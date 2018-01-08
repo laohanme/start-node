@@ -1,0 +1,10 @@
+# ignore js files written by others
+node_modules/*
+**/*.min.js
+**/vendor/*
+
+# ignore files for browser
+**/dist/*
+
+# dont lint script written for browser
+/static/*

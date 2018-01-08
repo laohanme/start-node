@@ -2,10 +2,11 @@
   "name": "start-node",
   "version": "1.0.0",
   "description": "startup node project",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -e \".html|.css|.js\" --delay 2500ms index.js "
+    "start": "nodemon -e \".html|.css|.js\" --delay 2500ms app.js ",
+    "lint": "eslint . --fix --ext .js"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,7 @@
     "serve-favicon": "^2.4.5"
   },
   "devDependencies": {
-    "eslint": "^4.11.0",
+    "eslint": "^4.15.0",
     "eslint-config-google": "^0.9.1",
     "nodemon": "^1.12.1"
   }
