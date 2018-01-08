@@ -36,7 +36,10 @@ app.use(cookieParser());
 app.use(favicon(path.join(__dirname, 'static', 'favicon', 'favicon.png')));
 
 const portNumber = 3000;
+
 app.listen(portNumber, function() {
     console.log('listening on port ' + portNumber + '!');
-    console.log('http://localhost:' + portNumber);
+    console.log(
+        '\n\nGo to your browser and type this: http://localhost:' + portNumber
+    );
 });
