@@ -1,6 +1,5 @@
 const express = require('express');
 const favicon = require('serve-favicon');
-const urlMain = require('./routes/main');
 const path = require('path');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
@@ -20,9 +19,6 @@ app.use('/static', express.static('static'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
-
-// Use routes from routes/main.js
-app.use(urlMain);
 
 app.use(favicon(path.join(__dirname, 'static', 'favicon', 'favicon.png')));
 
