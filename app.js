@@ -10,7 +10,7 @@ app = express();
 app.set('view engine', 'pug');
 
 // Templates
-app.set('views', './templates');
+app.set('views', './views');
 
 // Static
 app.use('/static', express.static('static'));
