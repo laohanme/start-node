@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": false,
+    "node": true
+  },
+  "extends": "google",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "brace-style": [
+      "error",
+      "stroustrup"
+    ],
+    "indent": [
+      "error",
+      4
+    ],
+    "comma-dangle": 0,
+    "max-len": [
+      "error",
+      {
+        "code": 80,
+        "tabWidth": 4,
+        "ignoreComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true
+      }
+    ],
+    "require-jsdoc": 0,
+    "linebreak-style": 0
+  }
+}
