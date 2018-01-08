@@ -1,9 +1,9 @@
-const express = require('express'),
-    favicon = require('serve-favicon'),
-    urlMain = require('./routes/main'),
-    path = require('path'),
-    bodyParser = require('body-parser'),
-    cookieParser = require('cookie-parser');
+const express = require('express');
+const favicon = require('serve-favicon');
+const urlMain = require('./routes/main');
+const path = require('path');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 
 app = express();
 // View filetype .pug
@@ -18,7 +18,7 @@ app.use('/static', express.static('static'));
 // Middleware to parse POST request & cookies
 // Must include if you want to parse POST request
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 
 // Use routes from routes/main.js
