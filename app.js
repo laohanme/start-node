@@ -4,7 +4,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
-app = express();
+const app = express();
 
 // View filetype .pug
 app.set('view engine', 'pug');
