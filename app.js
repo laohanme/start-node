@@ -16,7 +16,7 @@ app.set('views', './views');
 app.use('/static', express.static('static'));
 
 app.get('/', function(req, res) {
-    res.render('index', {title: 'Welcome to Nodejs', message: 'Hello there!'});
+    res.render('index', {title: 'Welcome to start-node', message: 'Hello there!'});
 });
 
 app.get('/api', function(req, res) {
