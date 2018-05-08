@@ -10,10 +10,10 @@ const app = express();
 app.set('view engine', 'pug');
 
 // Templates
-app.set('views', './views');
+app.set('views', path.join(__dirname, '.', 'views'));
 
 // Static
-app.use('/static', express.static('static'));
+app.use('/static', express.static(path.join(__dirname, '.', 'static')));
 
 app.get('/', function(req, res) {
     res.render('index', {title: 'Welcome to start-node', message: 'Hello there!'});
