@@ -25,16 +25,16 @@
   },
   "homepage": "https://github.com/laohanme/start-node#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.3",
     "pug": "^2.0.3",
-    "request": "^2.85.0",
+    "request": "^2.86.0",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-google": "^0.9.1",
-    "nodemon": "^1.17.3"
+    "nodemon": "^1.17.4"
   }
 }
