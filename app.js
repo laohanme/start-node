@@ -15,10 +15,16 @@ app.set('views', path.join(__dirname, '.', 'views'));
 // Static
 app.use('/static', express.static(path.join(__dirname, '.', 'static')));
 
+// Serve link example (http://localhost:3000/__)
 app.get('/', function(req, res) {
     res.render('index', {title: 'Welcome to start-node', message: 'Hello there!'});
 });
 
+app.get('/learn/angularjs', function(req, res) {
+    res.render('learn/angularjs', {title: 'Welcome to AngularJS', message: 'Hello there!'});
+});
+
+// API Area
 app.get('/api', function(req, res) {
     res.json(req.query);
 });
