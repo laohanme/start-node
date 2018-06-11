@@ -13,11 +13,11 @@ Dependencies | Version
 [cookie-parser](https://github.com/expressjs/cookie-parser) | ^1.4.3
 [express](https://github.com/expressjs/express) | ^4.16.3
 [pug](https://pugjs.org/api/getting-started.html) | ^2.0.3
-[request](https://github.com/request/request) | ^2.86.0
+[request](https://github.com/request/request) | ^2.87.0
 [serve-favicon](https://github.com/expressjs/serve-favicon) | ^2.5.0
 [eslint](https://github.com/eslint/eslint) | ^4.19.1
 [eslint-config-google](https://github.com/google/eslint-config-google) | ^0.9.1
-[nodemon](https://github.com/remy/nodemon) | ^1.17.4
+[nodemon](https://github.com/remy/nodemon) | ^1.17.5
 
 ## Getting Started
 
