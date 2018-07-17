@@ -17,7 +17,7 @@ Dependencies | Version
 [serve-favicon](https://github.com/expressjs/serve-favicon) | ^2.5.0
 [eslint](https://github.com/eslint/eslint) | ^4.19.1
 [eslint-config-google](https://github.com/google/eslint-config-google) | ^0.9.1
-[nodemon](https://github.com/remy/nodemon) | ^1.17.5
+[nodemon](https://github.com/remy/nodemon) | ^1.18.2
 
 ## Getting Started
 
