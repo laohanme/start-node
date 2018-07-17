@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description' content='')
+        meta(name='keywords' content='')
+        meta(name='author' content='')
+        title #{title}
+        link(rel='stylesheet', href='../static/vendor/css/bootstrap.min.css')
+        link(rel='manifest' href='../static/manifest.json')
+        block css
+    body
+        block header
+        block content
+        script(src='../static/vendor/js/jquery-slim.min.js')
+        script(src='../static/vendor/js/popper.min.js')
+        script(src='../static/vendor/js/bootstrap.min.js')
+        script(src='../static/vendor/js/angular.min.js')
+        block scripts

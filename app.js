@@ -20,8 +20,8 @@ app.get('/', function(req, res) {
     res.render('index', {title: 'Welcome to start-node', message: 'Hello there!'});
 });
 
-app.get('/learn/angularjs', function(req, res) {
-    res.render('learn/angularjs', {title: 'Welcome to AngularJS', message: 'Hello there!'});
+app.get('/playground/angularjs', function(req, res) {
+    res.render('playground/angularjs', {title: 'Welcome to AngularJS', message: 'Hello there!'});
 });
 
 // API Area

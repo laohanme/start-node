@@ -1,0 +1,33 @@
+extends ../common/base.pug
+block css
+block content
+    div(ng-app='app' ng-controller='ctr')
+        .container.my-5
+            h1 {{msg}}
+            hr
+            .row
+                .col-lg-6.col-12
+                    textarea.form-control.form-control-lg(type='text' ng-model='data')
+                    small.text-muted You can type something here
+                .col-lg-6.col-12
+                    p {{data}}
+
+
+block scripts
+    script.
+        const strAppName = 'app';
+        const strCtrName = 'ctr';
+        const app = angular.module(strAppName, []);
+
+        app.config([
+            '$httpProvider', function($httpProvider) {
+                $httpProvider.defaults.xsrfCookieName = 'csrftoken';
+                $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
+            }]);
+
+        app.controller(strCtrName, [
+            '$scope', '$http', '$httpParamSerializer',
+            function($scope, $http, $httpParamSerializer) {
+                $scope.msg = 'AngularJS';
+                $scope.data = 'Hello World';
+            }]);
