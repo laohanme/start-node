@@ -34,6 +34,15 @@ block css
         .box-shadow {
             box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
         }
+
+        .hidden {
+            opacity:0;
+        }
+
+        .console-underscore {
+            display:inline-block;
+            left:10px;
+        }
 block content
     .d-flex.flex-column.flex-md-row.align-items-center.p-3.px-md-4.mb-3.bg-white.border-bottom.box-shadow
         h5.my-0.mr-md-auto.font-weight-normal #{title}
@@ -44,7 +53,10 @@ block content
             a.p-2.text-dark(href='#') Pricing
         a.btn.btn-outline-primary(href='#') Sign up
     .pricing-header.px-3.py-3.pt-md-5.pb-md-4.mx-auto.text-center
-        h1.display-4 #{title}
+        div(style='min-height:100px;')
+            h1.display-4
+                span#text
+                    #console.console-underscore &#95;
         p.lead
             | Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.
     .container
@@ -64,17 +76,17 @@ block content
                     a.btn.btn-lg.btn-block.btn-outline-primary(href='/playground/angularjs') Learn Now
             .card.mb-4.box-shadow
                 .card-header
-                    h4.my-0.font-weight-normal Pro
+                    h4.my-0.font-weight-normal VueJS
                 .card-body
                     h1.card-title.pricing-card-title
-                        | $15
+                        | $0
                         small.text-muted / mo
                     ul.list-unstyled.mt-3.mb-4
                         li 20 users included
                         li 10 GB of storage
                         li Priority email support
                         li Help center access
-                    button.btn.btn-lg.btn-block.btn-primary(type='button') Get started
+                    a.btn.btn-lg.btn-block.btn-outline-primary(href='/playground/vuejs') Learn Now
             .card.mb-4.box-shadow
                 .card-header
                     h4.my-0.font-weight-normal Enterprise
@@ -130,3 +142,5 @@ block content
                             a.text-muted(href='#') Privacy
                         li
                             a.text-muted(href='#') Terms
+block scripts
+    script(src='../static/custom/js/terminal.js')
