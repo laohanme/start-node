@@ -1,0 +1,30 @@
+extends ../common/base.pug
+block css
+block content
+    div(id='app')
+        .container.my-5
+            h1 {{msg}}
+            hr
+            .row
+                .col-lg-6.col-12
+                    textarea.form-control.form-control-lg(type='text' v-model='inputData')
+                    small.text-muted You can type something here
+
+                    .my-2
+                        h4 Tutorial
+                        kbd &lt;textarea type='text' v-model='inputData'&gt;&lt;/textarea&gt;
+
+                .col-lg-6.col-12
+                    p {{inputData}}
+
+
+block scripts
+    script(src='../static/vendor/js/vue.min.js')
+    script.
+        var app = new Vue({
+            el: '#app',
+            data: {
+                msg: 'Hello Vue!',
+                inputData: ''
+            }
+        })

@@ -24,6 +24,10 @@ app.get('/playground/angularjs', function(req, res) {
     res.render('playground/angularjs', {title: 'Welcome to AngularJS', message: 'Hello there!'});
 });
 
+app.get('/playground/vuejs', function(req, res) {
+    res.render('playground/vuejs', {title: 'Welcome to VueJS', message: 'Hello there!'});
+});
+
 // API Area
 app.get('/api', function(req, res) {
     res.json(req.query);
@@ -41,7 +45,7 @@ app.use(cookieParser());
 
 app.use(favicon(path.join(__dirname, 'static', 'favicon', 'favicon.png')));
 
-const portNumber = 3000;
+const portNumber = 3018;
 
 app.listen(portNumber, function() {
     console.log('listening on port ' + portNumber + '!');
