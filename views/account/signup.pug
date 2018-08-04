@@ -1,0 +1,27 @@
+extends ../common/base.pug
+block css
+block content
+    div(ng-app='app' ng-controller='ctr')
+        .container.my-5
+            .from-group
+                input.form-control(type='text' ng-model='email')
+            
+
+block scripts
+    script(src='../static/vendor/js/angular.min.js')
+    script.
+        const strAppName = 'app';
+        const strCtrName = 'ctr';
+        const app = angular.module(strAppName, []);
+
+        app.config([
+            '$httpProvider', function($httpProvider) {
+                $httpProvider.defaults.xsrfCookieName = 'csrftoken';
+                $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
+            }]);
+
+        app.controller(strCtrName, [
+            '$scope', '$http', '$httpParamSerializer',
+            function($scope, $http, $httpParamSerializer) {
+
+            }]);

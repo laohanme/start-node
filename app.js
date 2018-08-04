@@ -1,6 +1,7 @@
 const express = require('express');
 const favicon = require('serve-favicon');
 const path = require('path');
+const routing = require('./route/route')
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
@@ -15,27 +16,8 @@ app.set('views', path.join(__dirname, '.', 'views'));
 // Static
 app.use('/static', express.static(path.join(__dirname, '.', 'static')));
 
-// Serve link example (http://localhost:3000/__)
-app.get('/', function(req, res) {
-    res.render('index', {title: 'Welcome to start-node', message: 'Hello there!'});
-});
-
-app.get('/playground/angularjs', function(req, res) {
-    res.render('playground/angularjs', {title: 'Welcome to AngularJS', message: 'Hello there!'});
-});
-
-app.get('/playground/vuejs', function(req, res) {
-    res.render('playground/vuejs', {title: 'Welcome to VueJS', message: 'Hello there!'});
-});
-
-// API Area
-app.get('/api', function(req, res) {
-    res.json(req.query);
-});
-
-app.post('/api', function(req, res) {
-    res.json(req.body);
-});
+// Routing link
+app.use(routing);
 
 // Middleware to parse POST request & cookies
 // Must include if you want to parse POST request
