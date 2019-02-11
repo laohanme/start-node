@@ -29,7 +29,7 @@
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.4",
-    "mongoose": "^5.3.14",
+    "mongoose": "^5.4.11",
     "pug": "^2.0.3",
     "request": "^2.88.0",
     "serve-favicon": "^2.5.0"
@@ -37,6 +37,6 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-google": "^0.9.1",
-    "nodemon": "^1.18.7"
+    "nodemon": "^1.18.10"
   }
 }
