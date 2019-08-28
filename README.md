@@ -9,16 +9,16 @@ Trying to start nodejs and build your website? <br>
 
 Dependencies | Version
 --- | --- |
-[body-parser](https://github.com/expressjs/body-parser) | ^1.19.0
-[cookie-parser](https://github.com/expressjs/cookie-parser) | ^1.4.4
-[express](https://github.com/expressjs/express) | ^4.17.1
-[pug](https://pugjs.org/api/getting-started.html) | ^2.0.4
-[request](https://github.com/request/request) | ^2.88.0
-[serve-favicon](https://github.com/expressjs/serve-favicon) | ^2.5.0
-[eslint](https://github.com/eslint/eslint) | ^4.19.1
-[eslint-config-google](https://github.com/google/eslint-config-google) | ^0.9.1
-[nodemon](https://github.com/remy/nodemon) | ^1.19.1
-[mongoose](https://github.com/Automattic/mongoose) | ^5.6.11
+[body-parser](https://github.com/expressjs/body-parser) | ![npm](https://img.shields.io/npm/v/body-parser)
+[cookie-parser](https://github.com/expressjs/cookie-parser) | ![npm](https://img.shields.io/npm/v/cookie-parser)
+[express](https://github.com/expressjs/express) | ![npm](https://img.shields.io/npm/v/express)
+[pug](https://pugjs.org/api/getting-started.html) | ![npm](https://img.shields.io/npm/v/pug)
+[request](https://github.com/request/request) | ![npm](https://img.shields.io/npm/v/request)
+[serve-favicon](https://github.com/expressjs/serve-favicon) | ![npm](https://img.shields.io/npm/v/serve-favicon)
+[eslint](https://github.com/eslint/eslint) | ![npm](https://img.shields.io/npm/v/eslint)
+[eslint-config-google](https://github.com/google/eslint-config-google) | ![npm](https://img.shields.io/npm/v/eslint-config-google)
+[nodemon](https://github.com/remy/nodemon) | ![npm](https://img.shields.io/npm/v/nodemon)
+[mongoose](https://github.com/Automattic/mongoose) | ![npm](https://img.shields.io/npm/v/mongoose)
 
 ## Getting Started
 
@@ -28,7 +28,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-Please install [Node.js](https://nodejs.org/en/) with LTS version before continue this stat-node project.
+Please install [Node.js](https://nodejs.org/en/) with LTS version before continue this start-node project.
+
 
 Clone Repository
 ```
