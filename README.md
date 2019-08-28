@@ -9,16 +9,16 @@ Trying to start nodejs and build your website? <br>
 
 Dependencies | Version
 --- | --- |
-[body-parser](https://github.com/expressjs/body-parser) | ^1.18.7
-[cookie-parser](https://github.com/expressjs/cookie-parser) | ^1.4.3
-[express](https://github.com/expressjs/express) | ^4.16.4
-[pug](https://pugjs.org/api/getting-started.html) | ^2.0.3
+[body-parser](https://github.com/expressjs/body-parser) | ^1.19.0
+[cookie-parser](https://github.com/expressjs/cookie-parser) | ^1.4.4
+[express](https://github.com/expressjs/express) | ^4.17.1
+[pug](https://pugjs.org/api/getting-started.html) | ^2.0.4
 [request](https://github.com/request/request) | ^2.88.0
 [serve-favicon](https://github.com/expressjs/serve-favicon) | ^2.5.0
 [eslint](https://github.com/eslint/eslint) | ^4.19.1
 [eslint-config-google](https://github.com/google/eslint-config-google) | ^0.9.1
-[nodemon](https://github.com/remy/nodemon) | ^1.18.10
-[mongoose](https://github.com/Automattic/mongoose) | ^5.4.11
+[nodemon](https://github.com/remy/nodemon) | ^1.19.1
+[mongoose](https://github.com/Automattic/mongoose) | ^5.6.11
 
 ## Getting Started
 
