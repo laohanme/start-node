@@ -22,7 +22,7 @@ app.use(routing);
 // Middleware to parse POST request & cookies
 // Must include if you want to parse POST request
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(favicon(path.join(__dirname, 'static', 'favicon', 'favicon.png')));

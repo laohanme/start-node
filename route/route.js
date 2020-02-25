@@ -18,4 +18,12 @@ app.get('/signup', function(req, res) {
     res.render('account/signup', {title: 'Welcome to start-node', message: 'Hello there!'});
 });
 
+app.get('/json', function(req, res) {
+    let myJSON = {
+        "id": 1,
+        "name": "laohan"
+    }
+    res.json(myJSON)
+});
+
 module.exports = app;
