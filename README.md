@@ -1,11 +1,11 @@
 # start-node
-##### Started
+### Started
 This repository for those who want to start using nodejs to development a website.
-##### Advanced
+### Advanced
 Go here [start-node-pro](https://github.com/colvefy/start-node-pro)
 
-Trying to start nodejs and build your website? <br>
-##### Start today!!
+
+##### Start Your First Website Today!!!
 
 Dependencies | Version
 --- | --- |
